@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elements",
+  "info": {
+    "name": "Elements",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "number": {
+      "type": "integer",
+      "unique": true
+    },
+    "atomic_mass": {
+      "type": "float"
+    },
+    "appearance": {
+      "type": "string"
+    },
+    "boil": {
+      "type": "float"
+    },
+    "category": {
+      "type": "string"
+    },
+    "density": {
+      "type": "float"
+    },
+    "discovered_by": {
+      "type": "string"
+    },
+    "melt": {
+      "type": "float"
+    },
+    "molar_heat": {
+      "type": "float"
+    },
+    "named_by": {
+      "type": "string"
+    },
+    "period": {
+      "type": "integer"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "spectral_img": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "richtext"
+    },
+    "xpos": {
+      "type": "integer"
+    },
+    "ypos": {
+      "type": "integer"
+    },
+    "shells": {
+      "type": "json"
+    },
+    "electron_configuration": {
+      "type": "string"
+    },
+    "electron_configuration_semantic": {
+      "type": "string"
+    },
+    "electron_affinity": {
+      "type": "float"
+    },
+    "electronegativity_pauling": {
+      "type": "decimal"
+    },
+    "ionization_energies": {
+      "type": "json"
+    }
+  }
+}
