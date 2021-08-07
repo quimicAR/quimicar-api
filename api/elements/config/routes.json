@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/elements/:number",
+      "handler": "elements.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/elements",
       "handler": "elements.create",
