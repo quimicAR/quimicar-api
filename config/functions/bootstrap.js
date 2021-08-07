@@ -14,6 +14,7 @@ module.exports = () => {
   const data = require("../../data/elements.json");
   data.elements.forEach((element) => {
     strapi.services.elements.create({
+      id: element.number,
       name: element.name,
       number: element.number,
       atomic_mass: element.atomic_mass,
