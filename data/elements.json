@@ -16,7 +16,7 @@
       "period": 1,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Hydrogen",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Hydrogen_Spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Hydrogen_Spectra.jpg",
       "summary": "Hydrogen is a chemical element with chemical symbol H and atomic number 1. With an atomic weight of 1.00794 u, hydrogen is the lightest element on the periodic table. Its monatomic form (H) is the most abundant chemical substance in the Universe, constituting roughly 75% of all baryonic mass.",
       "symbol": "H",
       "xpos": 1,
@@ -31,7 +31,8 @@
       "ionization_energies": [
         1312
       ],
-      "cpk-hex": "ffffff"
+      "cpk-hex": "ffffff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/8/83/Hydrogen_discharge_tube.jpg"
     },
     {
       "name": "Helium",
@@ -49,7 +50,7 @@
       "period": 1,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Helium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Helium_spectrum.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Helium_spectrum.jpg",
       "summary": "Helium is a chemical element with symbol He and atomic number 2. It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas that heads the noble gas group in the periodic table. Its boiling and melting points are the lowest among all the elements.",
       "symbol": "He",
       "xpos": 18,
@@ -65,7 +66,8 @@
         2372.3,
         5250.5
       ],
-      "cpk-hex": "d9ffff"
+      "cpk-hex": "d9ffff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/8/82/Helium_discharge_tube.jpg"
     },
     {
       "name": "Lithium",
@@ -101,7 +103,8 @@
         7298.1,
         11815
       ],
-      "cpk-hex": "cc80ff"
+      "cpk-hex": "cc80ff",
+      "element_img": "https://en.wikipedia.org/wiki/Lithium#/media/File:Lithium_paraffin.jpg"
     },
     {
       "name": "Beryllium",
@@ -138,7 +141,8 @@
         14848.7,
         21006.6
       ],
-      "cpk-hex": "c2ff00"
+      "cpk-hex": "c2ff00",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Be-140g.jpg"
     },
     {
       "name": "Boron",
@@ -176,7 +180,8 @@
         25025.8,
         32826.7
       ],
-      "cpk-hex": "ffb5b5"
+      "cpk-hex": "ffb5b5",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/19/Boron_R105.jpg"
     },
     {
       "name": "Carbon",
@@ -194,7 +199,7 @@
       "period": 2,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Carbon",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Carbon_Spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Carbon_Spectra.jpg",
       "summary": "Carbon (from Latin:carbo \"coal\") is a chemical element with symbol C and atomic number 6. On the periodic table, it is the first (row 2) of six elements in column (group) 14, which have in common the composition of their outer electron shell. It is nonmetallic and tetravalent—making four electrons available to form covalent chemical bonds.",
       "symbol": "C",
       "xpos": 14,
@@ -215,7 +220,8 @@
         37831,
         47277
       ],
-      "cpk-hex": "909090"
+      "cpk-hex": "909090",
+      "element_img": "https://en.wikipedia.org/wiki/Carbon#/media/File:Glassy_carbon_and_a_1cm3_graphite_cube_HP68-79.jpg"
     },
     {
       "name": "Nitrogen",
@@ -233,7 +239,7 @@
       "period": 2,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Nitrogen",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Nitrogen_Spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/3/37/Nitrogen_Spectra.jpg",
       "summary": "Nitrogen is a chemical element with symbol N and atomic number 7. It is the lightest pnictogen and at room temperature, it is a transparent, odorless diatomic gas. Nitrogen is a common element in the universe, estimated at about seventh in total abundance in the Milky Way and the Solar System.",
       "symbol": "N",
       "xpos": 15,
@@ -255,7 +261,8 @@
         53266.6,
         64360
       ],
-      "cpk-hex": "3050f8"
+      "cpk-hex": "3050f8",
+      "element_img": "http://www.stores.unsw.edu.au/sites/default/files/styles/1085x265/public/nodes/products/hero_images/Liquid_nitrogen_1.jpg"
     },
     {
       "name": "Oxygen",
@@ -273,7 +280,7 @@
       "period": 2,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Oxygen",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Oxygen_spectre.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Oxygen_spectre.jpg",
       "summary": "Oxygen is a chemical element with symbol O and atomic number 8. It is a member of the chalcogen group on the periodic table and is a highly reactive nonmetal and oxidizing agent that readily forms compounds (notably oxides) with most elements. By mass, oxygen is the third-most abundant element in the universe, after hydrogen and helium.",
       "symbol": "O",
       "xpos": 16,
@@ -296,7 +303,8 @@
         71330,
         84078
       ],
-      "cpk-hex": "ff0d0d"
+      "cpk-hex": "ff0d0d",
+      "element_img": "https://images-of-elements.com/oxygen-3.jpg"
     },
     {
       "name": "Fluorine",
@@ -338,7 +346,8 @@
         92038.1,
         106434.3
       ],
-      "cpk-hex": "90e050"
+      "cpk-hex": "90e050",
+      "element_img": "https://images-of-elements.com/fluorine.jpg"
     },
     {
       "name": "Neon",
@@ -356,7 +365,7 @@
       "period": 2,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Neon",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Neon_spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/9/99/Neon_spectra.jpg",
       "summary": "Neon is a chemical element with symbol Ne and atomic number 10. It is in group 18 (noble gases) of the periodic table. Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about two-thirds the density of air.",
       "symbol": "Ne",
       "xpos": 18,
@@ -381,7 +390,8 @@
         115379.5,
         131432
       ],
-      "cpk-hex": "b3e3f5"
+      "cpk-hex": "b3e3f5",
+      "element_img": "https://images-of-elements.com/neon-3.jpg"
     },
     {
       "name": "Sodium",
@@ -399,7 +409,7 @@
       "period": 3,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Sodium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Sodium_Spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sodium_Spectra.jpg",
       "summary": "Sodium /ˈsoʊdiəm/ is a chemical element with symbol Na (from Ancient Greek Νάτριο) and atomic number 11. It is a soft, silver-white, highly reactive metal. In the Periodic table it is in column 1 (alkali metals), and shares with the other six elements in that column that it has a single electron in its outer shell, which it readily donates, creating a positively charged atom - a cation.",
       "symbol": "Na",
       "xpos": 1,
@@ -426,7 +436,8 @@
         141362,
         159076
       ],
-      "cpk-hex": "ab5cf2"
+      "cpk-hex": "ab5cf2",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/2/27/Na_%28Sodium%29.jpg"
     },
     {
       "name": "Magnesium",
@@ -444,7 +455,7 @@
       "period": 3,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Magnesium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Magnesium_Spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Magnesium_Spectra.jpg",
       "summary": "Magnesium is a chemical element with symbol Mg and atomic number 12. It is a shiny gray solid which bears a close physical resemblance to the other five elements in the second column (Group 2, or alkaline earth metals) of the periodic table:they each have the same electron configuration in their outer electron shell producing a similar crystal structure. Magnesium is the ninth most abundant element in the universe.",
       "symbol": "Mg",
       "xpos": 2,
@@ -472,7 +483,8 @@
         169988,
         189368
       ],
-      "cpk-hex": "8aff00"
+      "cpk-hex": "8aff00",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/5c/CSIRO_ScienceImage_2893_Crystalised_magnesium.jpg"
     },
     {
       "name": "Aluminium",
@@ -519,7 +531,8 @@
         201266,
         222316
       ],
-      "cpk-hex": "bfa6a6"
+      "cpk-hex": "bfa6a6",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Aluminium-4.jpg"
     },
     {
       "name": "Silicon",
@@ -537,7 +550,7 @@
       "period": 3,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Silicon",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Silicon_Spectra.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Silicon_Spectra.jpg",
       "summary": "Silicon is a chemical element with symbol Si and atomic number 14. It is a tetravalent metalloid, more reactive than germanium, the metalloid directly below it in the table. Controversy about silicon's character dates to its discovery.",
       "symbol": "Si",
       "xpos": 14,
@@ -567,7 +580,8 @@
         235196,
         257923
       ],
-      "cpk-hex": "f0c8a0"
+      "cpk-hex": "f0c8a0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/e/e9/SiliconCroda.jpg"
     },
     {
       "name": "Phosphorus",
@@ -616,7 +630,8 @@
         271791,
         296195
       ],
-      "cpk-hex": "ff8000"
+      "cpk-hex": "ff8000",
+      "element_img": "https://images-of-elements.com/red-phosphorus.jpg"
     },
     {
       "name": "Sulfur",
@@ -634,7 +649,7 @@
       "period": 3,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Sulfur",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Sulfur_Spectrum.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Sulfur_Spectrum.jpg",
       "summary": "Sulfur or sulphur (see spelling differences) is a chemical element with symbol S and atomic number 16. It is an abundant, multivalent non-metal. Under normal conditions, sulfur atoms form cyclic octatomic molecules with chemical formula S8.",
       "symbol": "S",
       "xpos": 16,
@@ -666,7 +681,8 @@
         311048,
         337138
       ],
-      "cpk-hex": "ffff30"
+      "cpk-hex": "ffff30",
+      "element_img": ""
     },
     {
       "name": "Chlorine",
@@ -684,7 +700,7 @@
       "period": 3,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Chlorine",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Chlorine_spectrum_visible.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Chlorine_spectrum_visible.png",
       "summary": "Chlorine is a chemical element with symbol Cl and atomic number 17. It also has a relative atomic mass of 35.5. Chlorine is in the halogen group (17) and is the second lightest halogen following fluorine.",
       "symbol": "Cl",
       "xpos": 17,
@@ -717,7 +733,8 @@
         352994,
         380760
       ],
-      "cpk-hex": "1ff01f"
+      "cpk-hex": "1ff01f",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Chlorine_liquid_in_an_ampoule.jpg/1024px-Chlorine_liquid_in_an_ampoule.jpg"
     },
     {
       "name": "Argon",
@@ -735,7 +752,7 @@
       "period": 3,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Argon",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Argon_Spectrum.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/3/37/Argon_Spectrum.png",
       "summary": "Argon is a chemical element with symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas. Argon is the third most common gas in the Earth's atmosphere, at 0.934% (9,340 ppmv), making it over twice as abundant as the next most common atmospheric gas, water vapor (which averages about 4000 ppmv, but varies greatly), and 23 times as abundant as the next most common non-condensing atmospheric gas, carbon dioxide (400 ppmv), and more than 500 times as abundant as the next most common noble gas, neon (18 ppmv).",
       "symbol": "Ar",
       "xpos": 18,
@@ -769,7 +786,8 @@
         397605,
         427066
       ],
-      "cpk-hex": "80d1e3"
+      "cpk-hex": "80d1e3",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/8/87/Argon_discharge_tube.jpg"
     },
     {
       "name": "Potassium",
@@ -787,7 +805,7 @@
       "period": 4,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Potassium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Potassium_Spectrum.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Potassium_Spectrum.jpg",
       "summary": "Potassium is a chemical element with symbol K (derived from Neo-Latin, kalium) and atomic number 19. It was first isolated from potash, the ashes of plants, from which its name is derived. In the Periodic table, potassium is one of seven elements in column (group) 1 (alkali metals):they all have a single valence electron in their outer electron shell, which they readily give up to create an atom with a positive charge - a cation, and combine with anions to form salts.",
       "symbol": "K",
       "xpos": 1,
@@ -823,7 +841,8 @@
         444880,
         476063
       ],
-      "cpk-hex": "8f40d4"
+      "cpk-hex": "8f40d4",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Potassium-2.jpg"
     },
     {
       "name": "Calcium",
@@ -841,7 +860,7 @@
       "period": 4,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Calcium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Calcium_Spectrum.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/2/21/Calcium_Spectrum.png",
       "summary": "Calcium is a chemical element with symbol Ca and atomic number 20. Calcium is a soft gray alkaline earth metal, fifth-most-abundant element by mass in the Earth's crust. The ion Ca2+ is also the fifth-most-abundant dissolved ion in seawater by both molarity and mass, after sodium, chloride, magnesium, and sulfate.",
       "symbol": "Ca",
       "xpos": 2,
@@ -878,7 +897,8 @@
         494850,
         527762
       ],
-      "cpk-hex": "3dff00"
+      "cpk-hex": "3dff00",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/96/Calcium_unter_Argon_Schutzgasatmosph%C3%A4re.jpg"
     },
     {
       "name": "Scandium",
@@ -934,7 +954,8 @@
         547530,
         582163
       ],
-      "cpk-hex": "e6e6e6"
+      "cpk-hex": "e6e6e6",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Scandium_sublimed_dendritic_and_1cm3_cube.jpg"
     },
     {
       "name": "Titanium",
@@ -991,7 +1012,8 @@
         602930,
         639294
       ],
-      "cpk-hex": "bfc2c7"
+      "cpk-hex": "bfc2c7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/d/db/Titan-crystal_bar.JPG"
     },
     {
       "name": "Vanadium",
@@ -1049,7 +1071,8 @@
         661050,
         699144
       ],
-      "cpk-hex": "a6a6ab"
+      "cpk-hex": "a6a6ab",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Vanadium-bar.jpg"
     },
     {
       "name": "Chromium",
@@ -1108,7 +1131,8 @@
         721870,
         761733
       ],
-      "cpk-hex": "8a99c7"
+      "cpk-hex": "8a99c7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chromium_crystals_and_1cm3_cube.jpg"
     },
     {
       "name": "Manganese",
@@ -1168,7 +1192,8 @@
         785450,
         827067
       ],
-      "cpk-hex": "9c7ac7"
+      "cpk-hex": "9c7ac7",
+      "element_img": "https://images-of-elements.com/manganese-4.jpg"
     },
     {
       "name": "Iron",
@@ -1186,7 +1211,7 @@
       "period": 4,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Iron",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Iron_Spectrum.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Iron_Spectrum.jpg",
       "summary": "Iron is a chemical element with symbol Fe (from Latin:ferrum) and atomic number 26. It is a metal in the first transition series. It is by mass the most common element on Earth, forming much of Earth's outer and inner core.",
       "symbol": "Fe",
       "xpos": 8,
@@ -1229,7 +1254,8 @@
         851800,
         895161
       ],
-      "cpk-hex": "e06633"
+      "cpk-hex": "e06633",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Iron_electrolytic_and_1cm3_cube.jpg"
     },
     {
       "name": "Cobalt",
@@ -1291,7 +1317,8 @@
         920870,
         966023
       ],
-      "cpk-hex": "f090a0"
+      "cpk-hex": "f090a0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Kobalt_electrolytic_and_1cm3_cube.jpg"
     },
     {
       "name": "Nickel",
@@ -1354,7 +1381,8 @@
         992718,
         1039668
       ],
-      "cpk-hex": "50d050"
+      "cpk-hex": "50d050",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/57/Nickel_chunk.jpg"
     },
     {
       "name": "Copper",
@@ -1418,7 +1446,8 @@
         1067358,
         1116105
       ],
-      "cpk-hex": "c88033"
+      "cpk-hex": "c88033",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/NatCopper.jpg"
     },
     {
       "name": "Zinc",
@@ -1474,7 +1503,8 @@
         71200,
         179100
       ],
-      "cpk-hex": "7d80b0"
+      "cpk-hex": "7d80b0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Zinc_fragment_sublimed_and_1cm3_cube.jpg"
     },
     {
       "name": "Gallium",
@@ -1513,7 +1543,8 @@
         2963,
         6180
       ],
-      "cpk-hex": "c28f8f"
+      "cpk-hex": "c28f8f",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/92/Gallium_crystals.jpg"
     },
     {
       "name": "Germanium",
@@ -1553,7 +1584,8 @@
         4411,
         9020
       ],
-      "cpk-hex": "668f8f"
+      "cpk-hex": "668f8f",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/08/Polycrystalline-germanium.jpg"
     },
     {
       "name": "Arsenic",
@@ -1594,7 +1626,8 @@
         6043,
         12310
       ],
-      "cpk-hex": "bd80e3"
+      "cpk-hex": "bd80e3",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Arsen_1a.jpg"
     },
     {
       "name": "Selenium",
@@ -1636,7 +1669,8 @@
         7880,
         14990
       ],
-      "cpk-hex": "ffa100"
+      "cpk-hex": "ffa100",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Selenium_in_sandstone_Westwater_Canyon_Section_23_Mine_Grants%2C_New_Mexico.jpg"
     },
     {
       "name": "Bromine",
@@ -1679,7 +1713,8 @@
         9940,
         18600
       ],
-      "cpk-hex": "a62929"
+      "cpk-hex": "a62929",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bromine_vial_in_acrylic_cube.jpg"
     },
     {
       "name": "Krypton",
@@ -1697,7 +1732,7 @@
       "period": 4,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Krypton",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Krypton_Spectrum.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Krypton_Spectrum.jpg",
       "summary": "Krypton (from Greek:κρυπτός kryptos \"the hidden one\") is a chemical element with symbol Kr and atomic number 36. It is a member of group 18 (noble gases) elements. A colorless, odorless, tasteless noble gas, krypton occurs in trace amounts in the atmosphere, is isolated by fractionally distilling liquefied air, and is often used with other rare gases in fluorescent lamps.",
       "symbol": "Kr",
       "xpos": 18,
@@ -1744,7 +1779,8 @@
         311400,
         326200
       ],
-      "cpk-hex": "5cb8d1"
+      "cpk-hex": "5cb8d1",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/50/Krypton_discharge_tube.jpg"
     },
     {
       "name": "Rubidium",
@@ -1790,7 +1826,8 @@
         14500,
         26740
       ],
-      "cpk-hex": "702eb0"
+      "cpk-hex": "702eb0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Rb5.JPG"
     },
     {
       "name": "Strontium",
@@ -1837,7 +1874,8 @@
         17100,
         31270
       ],
-      "cpk-hex": "00ff00"
+      "cpk-hex": "00ff00",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/4/41/Strontium_destilled_crystals.jpg"
     },
     {
       "name": "Yttrium",
@@ -1885,7 +1923,8 @@
         19900,
         36090
       ],
-      "cpk-hex": "94ffff"
+      "cpk-hex": "94ffff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/19/Yttrium_sublimed_dendritic_and_1cm3_cube.jpg"
     },
     {
       "name": "Zirconium",
@@ -1927,7 +1966,8 @@
         7752,
         9500
       ],
-      "cpk-hex": "94e0e0"
+      "cpk-hex": "94e0e0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/92/Zirconium_crystal_bar_and_1cm3_cube.jpg"
     },
     {
       "name": "Niobium",
@@ -1970,7 +2010,8 @@
         9847,
         12100
       ],
-      "cpk-hex": "73c2c9"
+      "cpk-hex": "73c2c9",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Niobium_crystals_and_1cm3_cube.jpg"
     },
     {
       "name": "Molybdenum",
@@ -2036,7 +2077,8 @@
         148100,
         154500
       ],
-      "cpk-hex": "54b5b5"
+      "cpk-hex": "54b5b5",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/3/32/Molybdenum_crystaline_fragment_and_1cm3_cube.jpg"
     },
     {
       "name": "Technetium",
@@ -2075,7 +2117,8 @@
         1470,
         2850
       ],
-      "cpk-hex": "3b9e9e"
+      "cpk-hex": "3b9e9e",
+      "element_img": "https://upload.wikimedia.org/wikipedia/en/8/89/Technetium.jpg"
     },
     {
       "name": "Ruthenium",
@@ -2114,7 +2157,8 @@
         1620,
         2747
       ],
-      "cpk-hex": "248f8f"
+      "cpk-hex": "248f8f",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ruthenium_a_half_bar.jpg"
     },
     {
       "name": "Rhodium",
@@ -2153,7 +2197,8 @@
         1740,
         2997
       ],
-      "cpk-hex": "0a7d8c"
+      "cpk-hex": "0a7d8c",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/55/Silver_crystal.jpg"
     },
     {
       "name": "Palladium",
@@ -2191,7 +2236,8 @@
         1870,
         3177
       ],
-      "cpk-hex": "006985"
+      "cpk-hex": "006985",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Palladium_%2846_Pd%29.jpg"
     },
     {
       "name": "Silver",
@@ -2201,7 +2247,7 @@
       "category": "transition metal",
       "color": null,
       "density": 10.49,
-      "discovered_by": "unknown, before 5000 BC",
+      "discovered_by": "before 5000 BC",
       "melt": 1234.93,
       "molar_heat": 25.35,
       "named_by": null,
@@ -2230,7 +2276,8 @@
         2070,
         3361
       ],
-      "cpk-hex": "c0c0c0"
+      "cpk-hex": "c0c0c0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/55/Silver_crystal.jpg"
     },
     {
       "name": "Cadmium",
@@ -2269,7 +2316,8 @@
         1631.4,
         3616
       ],
-      "cpk-hex": "ffd98f"
+      "cpk-hex": "ffd98f",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Cadmium-crystal_bar.jpg"
     },
     {
       "name": "Indium",
@@ -2309,7 +2357,8 @@
         2704,
         5210
       ],
-      "cpk-hex": "a67573"
+      "cpk-hex": "a67573",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Indium.jpg"
     },
     {
       "name": "Tin",
@@ -2319,7 +2368,7 @@
       "category": "post-transition metal",
       "color": null,
       "density": 7.365,
-      "discovered_by": "unknown, before 3500 BC",
+      "discovered_by": "before 3500 BC",
       "melt": 505.08,
       "molar_heat": 27.112,
       "named_by": null,
@@ -2350,7 +2399,8 @@
         3930.3,
         7456
       ],
-      "cpk-hex": "668080"
+      "cpk-hex": "668080",
+      "element_img": "https://en.wikipedia.org/wiki/Tin#/media/File:Sn-Alpha-Beta.jpg"
     },
     {
       "name": "Antimony",
@@ -2360,7 +2410,7 @@
       "category": "metalloid",
       "color": null,
       "density": 6.697,
-      "discovered_by": "unknown, before 3000 BC",
+      "discovered_by": "before 3000 BC",
       "melt": 903.78,
       "molar_heat": 25.23,
       "named_by": null,
@@ -2392,7 +2442,8 @@
         5400,
         10400
       ],
-      "cpk-hex": "9e63b5"
+      "cpk-hex": "9e63b5",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Antimony-4.jpg"
     },
     {
       "name": "Tellurium",
@@ -2435,7 +2486,8 @@
         6820,
         13200
       ],
-      "cpk-hex": "d47a00"
+      "cpk-hex": "d47a00",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Tellurium2.jpg"
     },
     {
       "name": "Iodine",
@@ -2474,7 +2526,8 @@
         1845.9,
         3180
       ],
-      "cpk-hex": "940094"
+      "cpk-hex": "940094",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Sample_of_iodine.jpg"
     },
     {
       "name": "Xenon",
@@ -2492,7 +2545,7 @@
       "period": 5,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Xenon",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Xenon_Spectrum.jpg",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/6/67/Xenon_Spectrum.jpg",
       "summary": "Xenon is a chemical element with symbol Xe and atomic number 54. It is a colorless, dense, odorless noble gas, that occurs in the Earth's atmosphere in trace amounts. Although generally unreactive, xenon can undergo a few chemical reactions such as the formation of xenon hexafluoroplatinate, the first noble gas compound to be synthesized.",
       "symbol": "Xe",
       "xpos": 18,
@@ -2513,7 +2566,8 @@
         2046.4,
         3099.4
       ],
-      "cpk-hex": "429eb0"
+      "cpk-hex": "429eb0",
+      "element_img": "https://images-of-elements.com/xenon-3.jpg"
     },
     {
       "name": "Cesium",
@@ -2553,7 +2607,8 @@
         2234.3,
         3400
       ],
-      "cpk-hex": "57178f"
+      "cpk-hex": "57178f",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Cesium.jpg"
     },
     {
       "name": "Barium",
@@ -2593,7 +2648,8 @@
         965.2,
         3600
       ],
-      "cpk-hex": "00c900"
+      "cpk-hex": "00c900",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/16/Barium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg"
     },
     {
       "name": "Lanthanum",
@@ -2635,7 +2691,8 @@
         4819,
         5940
       ],
-      "cpk-hex": "70d4ff"
+      "cpk-hex": "70d4ff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Lanthanum-2.jpg"
     },
     {
       "name": "Cerium",
@@ -2678,7 +2735,8 @@
         6325,
         7490
       ],
-      "cpk-hex": "ffffc7"
+      "cpk-hex": "ffffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Cerium2.jpg"
     },
     {
       "name": "Praseodymium",
@@ -2720,7 +2778,8 @@
         3761,
         5551
       ],
-      "cpk-hex": "d9ffc7"
+      "cpk-hex": "d9ffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Praseodymium.jpg"
     },
     {
       "name": "Neodymium",
@@ -2761,7 +2820,8 @@
         2130,
         3900
       ],
-      "cpk-hex": "c7ffc7"
+      "cpk-hex": "c7ffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Neodymium2.jpg"
     },
     {
       "name": "Promethium",
@@ -2802,7 +2862,8 @@
         2150,
         3970
       ],
-      "cpk-hex": "a3ffc7"
+      "cpk-hex": "a3ffc7",
+      "element_img": "https://images-of-elements.com/praseodymium.jpg"
     },
     {
       "name": "Samarium",
@@ -2843,7 +2904,8 @@
         2260,
         3990
       ],
-      "cpk-hex": "8fffc7"
+      "cpk-hex": "8fffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/8/88/Samarium-2.jpg"
     },
     {
       "name": "Europium",
@@ -2884,7 +2946,8 @@
         2404,
         4120
       ],
-      "cpk-hex": "61ffc7"
+      "cpk-hex": "61ffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Europium.jpg"
     },
     {
       "name": "Gadolinium",
@@ -2925,7 +2988,8 @@
         1990,
         4250
       ],
-      "cpk-hex": "45ffc7"
+      "cpk-hex": "45ffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Gadolinium-4.jpg"
     },
     {
       "name": "Terbium",
@@ -2966,7 +3030,8 @@
         2114,
         3839
       ],
-      "cpk-hex": "30ffc7"
+      "cpk-hex": "30ffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Terbium-2.jpg"
     },
     {
       "name": "Dysprosium",
@@ -3007,7 +3072,8 @@
         2200,
         3990
       ],
-      "cpk-hex": "1fffc7"
+      "cpk-hex": "1fffc7",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Dy_chips.jpg"
     },
     {
       "name": "Holmium",
@@ -3048,7 +3114,8 @@
         2204,
         4100
       ],
-      "cpk-hex": "00ff9c"
+      "cpk-hex": "00ff9c",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Holmium2.jpg"
     },
     {
       "name": "Erbium",
@@ -3089,7 +3156,8 @@
         2194,
         4120
       ],
-      "cpk-hex": "00e675"
+      "cpk-hex": "00e675",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/12/Erbium-crop.jpg"
     },
     {
       "name": "Thulium",
@@ -3130,7 +3198,8 @@
         2285,
         4120
       ],
-      "cpk-hex": "00d452"
+      "cpk-hex": "00d452",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Thulium_sublimed_dendritic_and_1cm3_cube.jpg"
     },
     {
       "name": "Ytterbium",
@@ -3171,7 +3240,8 @@
         2417,
         4203
       ],
-      "cpk-hex": "00bf38"
+      "cpk-hex": "00bf38",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ytterbium-3.jpg"
     },
     {
       "name": "Lutetium",
@@ -3213,7 +3283,8 @@
         4370,
         6445
       ],
-      "cpk-hex": "00ab24"
+      "cpk-hex": "00ab24",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Lutetium_sublimed_dendritic_and_1cm3_cube.jpg"
     },
     {
       "name": "Hafnium",
@@ -3231,7 +3302,7 @@
       "period": 6,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Hafnium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Hafnium_spectrum_visible.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hafnium_spectrum_visible.png",
       "summary": "Hafnium is a chemical element with symbol Hf and atomic number 72. A lustrous, silvery gray, tetravalent transition metal, hafnium chemically resembles zirconium and is found in zirconium minerals. Its existence was predicted by Dmitri Mendeleev in 1869, though it was not identified until 1923, making it the penultimate stable element to be discovered (rhenium was identified two years later).",
       "symbol": "Hf",
       "xpos": 4,
@@ -3254,7 +3325,8 @@
         2250,
         3216
       ],
-      "cpk-hex": "4dc2ff"
+      "cpk-hex": "4dc2ff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/3/38/Hf-crystal_bar.jpg"
     },
     {
       "name": "Tantalum",
@@ -3272,7 +3344,7 @@
       "period": 6,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Tantalum",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Tantalum_spectrum_visible.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tantalum_spectrum_visible.png",
       "summary": "Tantalum is a chemical element with symbol Ta and atomic number 73. Previously known as tantalium, its name comes from Tantalus, an antihero from Greek mythology. Tantalum is a rare, hard, blue-gray, lustrous transition metal that is highly corrosion-resistant.",
       "symbol": "Ta",
       "xpos": 5,
@@ -3293,7 +3365,8 @@
         761,
         1500
       ],
-      "cpk-hex": "4da6ff"
+      "cpk-hex": "4da6ff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tantalum_single_crystal_and_1cm3_cube.jpg"
     },
     {
       "name": "Tungsten",
@@ -3332,7 +3405,8 @@
         770,
         1700
       ],
-      "cpk-hex": "2194d6"
+      "cpk-hex": "2194d6",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Wolfram_evaporated_crystals_and_1cm3_cube.jpg"
     },
     {
       "name": "Rhenium",
@@ -3373,7 +3447,8 @@
         2510,
         3640
       ],
-      "cpk-hex": "267dab"
+      "cpk-hex": "267dab",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/7/71/Rhenium_single_crystal_bar_and_1cm3_cube.jpg"
     },
     {
       "name": "Osmium",
@@ -3412,7 +3487,8 @@
         840,
         1600
       ],
-      "cpk-hex": "266696"
+      "cpk-hex": "266696",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Osmium_crystals.jpg"
     },
     {
       "name": "Iridium",
@@ -3451,7 +3527,8 @@
         880,
         1600
       ],
-      "cpk-hex": "175487"
+      "cpk-hex": "175487",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Iridium-2.jpg"
     },
     {
       "name": "Platinum",
@@ -3490,7 +3567,8 @@
         870,
         1791
       ],
-      "cpk-hex": "d0d0e0"
+      "cpk-hex": "d0d0e0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/6/68/Platinum_crystals.jpg"
     },
     {
       "name": "Gold",
@@ -3529,7 +3607,8 @@
         890.1,
         1980
       ],
-      "cpk-hex": "ffd123"
+      "cpk-hex": "ffd123",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/6/69/Gold_nugget_%28Australia%29_4_%2816848647509%29.jpg"
     },
     {
       "name": "Mercury",
@@ -3539,7 +3618,7 @@
       "category": "transition metal",
       "color": null,
       "density": 13.534,
-      "discovered_by": "unknown, before 2000 BCE",
+      "discovered_by": "before 2000 BCE",
       "melt": 234.321,
       "molar_heat": 27.983,
       "named_by": null,
@@ -3569,7 +3648,8 @@
         1810,
         3300
       ],
-      "cpk-hex": "b8b8d0"
+      "cpk-hex": "b8b8d0",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/99/Pouring_liquid_mercury_bionerd.jpg"
     },
     {
       "name": "Thallium",
@@ -3609,7 +3689,8 @@
         1971,
         2878
       ],
-      "cpk-hex": "a6544d"
+      "cpk-hex": "a6544d",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Thallium_pieces_in_ampoule.jpg"
     },
     {
       "name": "Lead",
@@ -3651,7 +3732,8 @@
         4083,
         6640
       ],
-      "cpk-hex": "575961"
+      "cpk-hex": "575961",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Lead_electrolytic_and_1cm3_cube.jpg"
     },
     {
       "name": "Bismuth",
@@ -3694,7 +3776,8 @@
         5400,
         8520
       ],
-      "cpk-hex": "9e4fb5"
+      "cpk-hex": "9e4fb5",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Bismuth_crystals_and_1cm3_cube.jpg"
     },
     {
       "name": "Polonium",
@@ -3732,11 +3815,12 @@
       "ionization_energies": [
         812.1
       ],
-      "cpk-hex": "ab5c00"
+      "cpk-hex": "ab5c00",
+      "element_img": "https://images-of-elements.com/polonium.jpg"
     },
     {
       "name": "Astatine",
-      "appearance": "unknown, probably metallic",
+      "appearance": "probably metallic",
       "atomic_mass": 210,
       "boil": 610,
       "category": "metalloid",
@@ -3770,7 +3854,8 @@
       "ionization_energies": [
         899.003
       ],
-      "cpk-hex": "754f45"
+      "cpk-hex": "754f45",
+      "element_img": "https://images-of-elements.com/astatine.jpg"
     },
     {
       "name": "Radon",
@@ -3788,7 +3873,7 @@
       "period": 6,
       "phase": "Gas",
       "source": "https://en.wikipedia.org/wiki/Radon",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Radon_spectrum.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Radon_spectrum.png",
       "summary": "Radon is a chemical element with symbol Rn and atomic number 86. It is a radioactive, colorless, odorless, tasteless noble gas, occurring naturally as a decay product of radium. Its most stable isotope, 222Rn, has a half-life of 3.8 days.",
       "symbol": "Rn",
       "xpos": 18,
@@ -3808,7 +3893,8 @@
       "ionization_energies": [
         1037
       ],
-      "cpk-hex": "428296"
+      "cpk-hex": "428296",
+      "element_img": "https://images-of-elements.com/radon.jpg"
     },
     {
       "name": "Francium",
@@ -3847,7 +3933,8 @@
       "ionization_energies": [
         380
       ],
-      "cpk-hex": "420066"
+      "cpk-hex": "420066",
+      "element_img": "https://images-of-elements.com/francium.jpg"
     },
     {
       "name": "Radium",
@@ -3887,7 +3974,8 @@
         509.3,
         979
       ],
-      "cpk-hex": "007d00"
+      "cpk-hex": "007d00",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Radium226.jpg"
     },
     {
       "name": "Actinium",
@@ -3927,7 +4015,8 @@
         499,
         1170
       ],
-      "cpk-hex": "70abfa"
+      "cpk-hex": "70abfa",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/2/27/Actinium_sample_%2831481701837%29.png"
     },
     {
       "name": "Thorium",
@@ -3969,7 +4058,8 @@
         1930,
         2780
       ],
-      "cpk-hex": "00baff"
+      "cpk-hex": "00baff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/1/13/Thorium_sample_0.1g.jpg"
     },
     {
       "name": "Protactinium",
@@ -4008,7 +4098,8 @@
       "ionization_energies": [
         568
       ],
-      "cpk-hex": "00a1ff"
+      "cpk-hex": "00a1ff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/en/0/05/Protactinium.jpg"
     },
     {
       "name": "Uranium",
@@ -4048,7 +4139,8 @@
         597.6,
         1420
       ],
-      "cpk-hex": "008fff"
+      "cpk-hex": "008fff",
+      "element_img": "https://images-of-elements.com/uranium-glass-uv.jpg"
     },
     {
       "name": "Neptunium",
@@ -4087,7 +4179,8 @@
       "ionization_energies": [
         604.5
       ],
-      "cpk-hex": "0080ff"
+      "cpk-hex": "0080ff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/0/03/Np_sphere.jpg"
     },
     {
       "name": "Plutonium",
@@ -4126,7 +4219,8 @@
       "ionization_energies": [
         584.7
       ],
-      "cpk-hex": "006bff"
+      "cpk-hex": "006bff",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/98/Plutonium3.jpg"
     },
     {
       "name": "Americium",
@@ -4144,7 +4238,7 @@
       "period": 7,
       "phase": "Solid",
       "source": "https://en.wikipedia.org/wiki/Americium",
-      "spectral_img": "https://en.wikipedia.org/wiki/File:Americium_spectrum_visible.png",
+      "spectral_img": "https://upload.wikimedia.org/wikipedia/commons/3/37/Americium_spectrum_visible.png",
       "summary": "Americium is a radioactive transuranic chemical element with symbol Am and atomic number 95. This member of the actinide series is located in the periodic table under the lanthanide element europium, and thus by analogy was named after the Americas. Americium was first produced in 1944 by the group of Glenn T.Seaborg from Berkeley, California, at the metallurgical laboratory of University of Chicago.",
       "symbol": "Am",
       "xpos": 9,
@@ -4165,7 +4259,8 @@
       "ionization_energies": [
         578
       ],
-      "cpk-hex": "545cf2"
+      "cpk-hex": "545cf2",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Americium_microscope.jpg"
     },
     {
       "name": "Curium",
@@ -4204,7 +4299,8 @@
       "ionization_energies": [
         581
       ],
-      "cpk-hex": "785ce3"
+      "cpk-hex": "785ce3",
+      "element_img": "https://upload.wikimedia.org/wikipedia/en/6/69/Curium.jpg"
     },
     {
       "name": "Berkelium",
@@ -4243,7 +4339,8 @@
       "ionization_energies": [
         601
       ],
-      "cpk-hex": "8a4fe3"
+      "cpk-hex": "8a4fe3",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Berkelium_metal.jpg"
     },
     {
       "name": "Californium",
@@ -4282,7 +4379,8 @@
       "ionization_energies": [
         608
       ],
-      "cpk-hex": "a136d4"
+      "cpk-hex": "a136d4",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/93/Californium.jpg"
     },
     {
       "name": "Einsteinium",
@@ -4321,7 +4419,8 @@
       "ionization_energies": [
         619
       ],
-      "cpk-hex": "b31fd4"
+      "cpk-hex": "b31fd4",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/5/55/Einsteinium.jpg"
     },
     {
       "name": "Fermium",
@@ -4360,7 +4459,8 @@
       "ionization_energies": [
         627
       ],
-      "cpk-hex": "b31fba"
+      "cpk-hex": "b31fba",
+      "element_img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fermium-Ytterbium_Alloy.jpg"
     },
     {
       "name": "Mendelevium",
@@ -4399,7 +4499,8 @@
       "ionization_energies": [
         635
       ],
-      "cpk-hex": "b30da6"
+      "cpk-hex": "b30da6",
+      "element_img": "https://images-of-elements.com/s/mendelevium.jpg"
     },
     {
       "name": "Nobelium",
@@ -4438,7 +4539,8 @@
       "ionization_energies": [
         642
       ],
-      "cpk-hex": "bd0d87"
+      "cpk-hex": "bd0d87",
+      "element_img": "https://images-of-elements.com/nobelium.jpg"
     },
     {
       "name": "Lawrencium",
@@ -4477,7 +4579,8 @@
       "ionization_energies": [
         470
       ],
-      "cpk-hex": "c70066"
+      "cpk-hex": "c70066",
+      "element_img": "https://images-of-elements.com/lawrencium.jpg"
     },
     {
       "name": "Rutherfordium",
@@ -4516,7 +4619,8 @@
       "ionization_energies": [
         580
       ],
-      "cpk-hex": "cc0059"
+      "cpk-hex": "cc0059",
+      "element_img": "https://images-of-elements.com/s/rutherfordium.jpg"
     },
     {
       "name": "Dubnium",
@@ -4553,7 +4657,8 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": "d1004f"
+      "cpk-hex": "d1004f",
+      "element_img": null
     },
     {
       "name": "Seaborgium",
@@ -4590,7 +4695,8 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": "d90045"
+      "cpk-hex": "d90045",
+      "element_img": null
     },
     {
       "name": "Bohrium",
@@ -4627,7 +4733,8 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": "e00038"
+      "cpk-hex": "e00038",
+      "element_img": null
     },
     {
       "name": "Hassium",
@@ -4664,14 +4771,15 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": "e6002e"
+      "cpk-hex": "e6002e",
+      "element_img": null
     },
     {
       "name": "Meitnerium",
       "appearance": null,
       "atomic_mass": 278,
       "boil": null,
-      "category": "unknown, probably transition metal",
+      "category": "probably transition metal",
       "color": null,
       "density": 37.4,
       "discovered_by": "Gesellschaft für Schwerionenforschung",
@@ -4701,14 +4809,15 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": "eb0026"
+      "cpk-hex": "eb0026",
+      "element_img": null
     },
     {
       "name": "Darmstadtium",
       "appearance": null,
       "atomic_mass": 281,
       "boil": null,
-      "category": "unknown, probably transition metal",
+      "category": "probably transition metal",
       "color": null,
       "density": 34.8,
       "discovered_by": "Gesellschaft für Schwerionenforschung",
@@ -4738,14 +4847,15 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Roentgenium",
       "appearance": null,
       "atomic_mass": 282,
       "boil": null,
-      "category": "unknown, probably transition metal",
+      "category": "transition metal",
       "color": null,
       "density": 28.7,
       "discovered_by": "Gesellschaft für Schwerionenforschung",
@@ -4775,7 +4885,8 @@
       "electron_affinity": 151,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Copernicium",
@@ -4812,14 +4923,15 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Nihonium",
       "appearance": null,
       "atomic_mass": 286,
       "boil": 1430,
-      "category": "unknown, probably transition metal",
+      "category": "probably transition metal",
       "color": null,
       "density": 16,
       "discovered_by": "RIKEN",
@@ -4849,7 +4961,8 @@
       "electron_affinity": 66.6,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Flerovium",
@@ -4886,14 +4999,15 @@
       "electron_affinity": null,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Moscovium",
       "appearance": null,
       "atomic_mass": 289,
       "boil": 1400,
-      "category": "unknown, probably post-transition metal",
+      "category": "post-transition metal",
       "color": null,
       "density": 13.5,
       "discovered_by": "Joint Institute for Nuclear Research",
@@ -4923,14 +5037,15 @@
       "electron_affinity": 35.3,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Livermorium",
       "appearance": null,
       "atomic_mass": 293,
       "boil": 1085,
-      "category": "unknown, probably post-transition metal",
+      "category": "post-transition metal",
       "color": null,
       "density": 12.9,
       "discovered_by": "Joint Institute for Nuclear Research",
@@ -4960,14 +5075,15 @@
       "electron_affinity": 74.9,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": "https://upload.wikimedia.org/wikipedia/en/d/d6/Curium_target_livermorium.jpg"
     },
     {
       "name": "Tennessine",
       "appearance": null,
       "atomic_mass": 294,
       "boil": 883,
-      "category": "unknown, probably metalloid",
+      "category": "metalloid",
       "color": null,
       "density": 7.17,
       "discovered_by": "Joint Institute for Nuclear Research",
@@ -4997,14 +5113,15 @@
       "electron_affinity": 165.9,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Oganesson",
       "appearance": null,
       "atomic_mass": 294,
       "boil": 350,
-      "category": "unknown, predicted to be noble gas",
+      "category": "noble gas",
       "color": null,
       "density": 4.95,
       "discovered_by": "Joint Institute for Nuclear Research",
@@ -5034,14 +5151,15 @@
       "electron_affinity": 5.40318,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     },
     {
       "name": "Ununennium",
       "appearance": null,
       "atomic_mass": 315,
       "boil": 630,
-      "category": "unknown, but predicted to be an alkali metal",
+      "category": "alkali metal",
       "color": null,
       "density": 3,
       "discovered_by": "GSI Helmholtz Centre for Heavy Ion Research",
@@ -5072,7 +5190,8 @@
       "electron_affinity": 63.87,
       "electronegativity_pauling": null,
       "ionization_energies": [],
-      "cpk-hex": null
+      "cpk-hex": null,
+      "element_img": null
     }
   ]
 }
