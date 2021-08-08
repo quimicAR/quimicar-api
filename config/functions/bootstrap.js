@@ -40,6 +40,7 @@ module.exports = () => {
       electron_affinity: element.electron_affinity,
       electronegativity_pauling: element.electronegativity_pauling,
       ionization_energies: JSON.stringify(element.ionization_energies),
+      element_img: element.element_img,
     });
   });
 };
