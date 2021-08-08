@@ -88,6 +88,9 @@
     },
     "ionization_energies": {
       "type": "json"
+    },
+    "element_img": {
+      "type": "string"
     }
   }
 }

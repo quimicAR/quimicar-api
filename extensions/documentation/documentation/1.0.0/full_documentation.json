@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/07/2021 3:27:04 PM"
+    "x-generation-date": "08/08/2021 4:06:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2870,6 +2870,9 @@
           "ionization_energies": {
             "type": "object"
           },
+          "element_img": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -2952,6 +2955,9 @@
           },
           "ionization_energies": {
             "type": "object"
+          },
+          "element_img": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

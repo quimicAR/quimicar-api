@@ -599,6 +599,9 @@
           "ionization_energies": {
             "type": "object"
           },
+          "element_img": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -681,6 +684,9 @@
           },
           "ionization_energies": {
             "type": "object"
+          },
+          "element_img": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
