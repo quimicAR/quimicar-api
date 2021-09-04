@@ -1,11 +1,11 @@
 ports:
   - port: 8080
 tasks:
-  - name: Database 
+  - name: Terminal 1 
     before: echo 'Creating tables...'
     init: postgres < ddl.sql
     command: psql -h localhost -d postgres -f ddl.sql
-  - name: SprinBoot
+  - name: Terminal 2
     before: echo 'Initializing Spring Boot on 8080'
     init: ./mvnw clean install
     command: ./mvnw spring-boot:run
