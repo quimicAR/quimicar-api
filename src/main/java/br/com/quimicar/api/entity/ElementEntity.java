@@ -1,19 +1,20 @@
-package br.com.quimicar.api;
+package br.com.quimicar.api.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Id;
 
 import lombok.Data;
 
+@Data
 @Entity
 @Table(name="elements")
-@Data
 public class ElementEntity {
 
-    @GeneratedValue(generator = "uuid")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "element_id")
     private String element_id;
