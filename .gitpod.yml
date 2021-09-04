@@ -1,9 +1,11 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
-  - init: psql -h localhost -d postgres -f ddl.sql
-  - init: ./mvnw clean install
+  - name: Database
+    before: echo 'Configuring Database...'
+    init: pg_stop && pg_start && pg_isready 
+    command: psql -h localhost -d postgres -f ddl.sql
+  - name: SpringBoot
+    init: ./mvnw clean install
     command: ./mvnw spring-boot:run
 image: gitpod/workspace-postgres
 
