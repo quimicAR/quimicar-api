@@ -1,12 +1,14 @@
-ports:
-  - port: 8080
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: Terminal 1 
-    before: echo 'Creating tables...'
-    init: postgres < ddl.sql
+  - init: echo 'init script' # runs during prebuild
+    command: echo 'start script'
+  - init: pg_start
     command: psql -h localhost -d postgres -f ddl.sql
-  - name: Terminal 2
-    before: echo 'Initializing Spring Boot on 8080'
-    init: ./mvnw clean install
+  - init: ./mvnw clean install
     command: ./mvnw spring-boot:run
 image: gitpod/workspace-postgres
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8080
+    onOpen: open-preview
