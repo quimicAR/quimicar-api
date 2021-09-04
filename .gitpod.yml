@@ -2,8 +2,7 @@
 tasks:
   - init: echo 'init script' # runs during prebuild
     command: echo 'start script'
-  - init: pg_start
-    command: psql -h localhost -d postgres -f ddl.sql
+  - init: psql -h localhost -d postgres -f ddl.sql
   - init: ./mvnw clean install
     command: ./mvnw spring-boot:run
 image: gitpod/workspace-postgres
