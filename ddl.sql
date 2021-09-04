@@ -1,8 +1,8 @@
-CREATE DATABASE db;
+-- CREATE DATABASE db;
 
-CREATE USER administrator WITH PASSWORD 'password';
+-- CREATE USER administrator WITH PASSWORD 'password';
 
-GRANT ALL PRIVILEGES ON DATABASE "db" to administrator;
+-- GRANT ALL PRIVILEGES ON DATABASE "db" to administrator;
 
 CREATE TABLE elements (
 	"element_id" serial,
