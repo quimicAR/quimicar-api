@@ -1,6 +1,5 @@
 ports:
   - port: 8080
-    onOpen: open-preview
 tasks:
   - name: Database 
     before: echo 'Creating tables...'
@@ -8,5 +7,6 @@ tasks:
     command: psql -h localhost -d postgres -f -a ddl.sql
   - name: SprinBoot
     before: echo 'Initializing Spring Boot on 8080'
-    command: mvn clean install
+    init: ./mvnw clean install
+    command: ./mvnw spring-boot:run
 image: gitpod/workspace-postgres
