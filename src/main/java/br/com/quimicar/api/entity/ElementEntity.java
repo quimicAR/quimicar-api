@@ -9,9 +9,9 @@ import javax.persistence.Id;
 
 import lombok.Data;
 
-@Data
 @Entity
 @Table(name="elements")
+@Data
 public class ElementEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
