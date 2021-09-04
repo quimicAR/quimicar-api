@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import br.com.quimicar.api.entity.ElementEntity;
@@ -17,6 +18,7 @@ class ApiApplicationTests {
 	}
 
 	@Autowired
+	@Qualifier("elementRepository")
 	private ElementRepository elementRepository;
 
 	@Test
