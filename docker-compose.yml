@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  quimicar_api:
+    image: "quimicar_api:latest"
+    build:
+      context: .
+    container_name: quimicar_api
+    depends_on:
+      - quimicar_db
+    env_file:
+      - .env
+    environment:
+      - SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL
+      - SPRING_DATASOURCE_USERNAME=$SPRING_DATASOURCE_USERNAME
+      - SPRING_DATASOURCE_PASSWORD=$SPRING_DATASOURCE_PASSWORD
+    ports:
+      - "8080:8080"
+
+  quimicar_db:
+    container_name: quimicar_db
+    image: "postgres:13.1-alpine"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./ddl.sql:/docker-entrypoint-initdb.d/ddl.sql
