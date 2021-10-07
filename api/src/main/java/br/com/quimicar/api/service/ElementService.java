@@ -4,10 +4,7 @@ import java.util.List;
 import br.com.quimicar.api.entity.ElementEntity;
 
 public interface ElementService {
-    List<ElementEntity> listElements();
+    List<ElementEntity> findAll();
 
-    ElementEntity findByNumber(Number number);
-
-    ElementEntity save(ElementEntity element);
-
+    ElementEntity findByNumber(Integer number);
 }

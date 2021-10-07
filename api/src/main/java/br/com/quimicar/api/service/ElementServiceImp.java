@@ -1,6 +1,5 @@
 package br.com.quimicar.api.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,19 +9,21 @@ import br.com.quimicar.api.repository.ElementRepository;
 
 @Service
 public class ElementServiceImp implements ElementService {
-    @Autowired
-    private ElementRepository elementsRepository;
 
-    public List<ElementEntity> listElements() {
+    private final ElementRepository elementsRepository;
+
+    public ElementServiceImp(ElementRepository elementsRepository) {
+        this.elementsRepository = elementsRepository;
+    }
+
+    @Override
+    public List<ElementEntity> findAll() {
         return elementsRepository.findAll();
     }
 
-    public ElementEntity findByNumber(Number number) {
+    @Override
+    public ElementEntity findByNumber(Integer number) {
         return elementsRepository.findByNumber(number);
-    }
-
-    public ElementEntity save(ElementEntity element) {
-        return elementsRepository.save(element);
     }
 
 }

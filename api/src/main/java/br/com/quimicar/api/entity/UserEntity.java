@@ -1,12 +1,14 @@
 package br.com.quimicar.api.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name="users")
-@Data
+@Getter
+@Setter
 public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -18,4 +20,6 @@ public class UserEntity {
     @Column(name = "password", nullable = false, updatable = false, unique = true)
     private String password;
 
+    private boolean enabled;
+    private boolean token_expired;
 }
