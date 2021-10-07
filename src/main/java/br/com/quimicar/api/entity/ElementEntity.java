@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Column;
+import java.util.UUID;
 
 
 @TypeDef(name = "int[]", typeClass = IntArrayType.class)
@@ -21,9 +22,9 @@ import javax.persistence.Column;
 @Setter
 public class ElementEntity {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private Integer id;
+    private UUID id;
 
     @Column(nullable = false, unique = true, updatable = false)
     private Integer number; // atomicNumber

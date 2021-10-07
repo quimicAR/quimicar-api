@@ -4,15 +4,16 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
 @Table(name="users")
 @Getter
 @Setter
 public class UserEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private Integer id;
+    private UUID id;
 
     @Column(name = "email", nullable = false, updatable = false, unique = true)
     private String email;
