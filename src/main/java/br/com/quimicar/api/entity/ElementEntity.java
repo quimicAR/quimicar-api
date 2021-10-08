@@ -27,7 +27,7 @@ public class ElementEntity {
     private UUID id;
 
     @Column(nullable = false, unique = true, updatable = false)
-    private Integer number; // atomicNumber
+    private Integer number;
 
     @Column(nullable = false, unique = true, updatable = false)
     private String name;
