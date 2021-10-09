@@ -12,7 +12,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Column;
-import java.util.UUID;
 
 
 @TypeDef(name = "int[]", typeClass = IntArrayType.class)
@@ -24,7 +23,7 @@ public class ElementEntity {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private UUID id;
+    private Integer id;
 
     @Column(nullable = false, unique = true, updatable = false)
     private Integer number;

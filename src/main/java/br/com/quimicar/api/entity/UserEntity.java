@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.UUID;
 
 @Entity
 @Table(name="users")
@@ -13,7 +12,7 @@ import java.util.UUID;
 public class UserEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private UUID id;
+    private Integer id;
 
     @Column(name = "email", nullable = false, updatable = false, unique = true)
     private String email;
