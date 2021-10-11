@@ -7,4 +7,10 @@ public interface ElementService {
     List<ElementEntity> findAll();
 
     ElementEntity findByNumber(Integer number);
+
+    void deleteByNumber(Integer number);
+
+    ElementEntity updateElement(Integer number, ElementEntity element);
+
+    ElementEntity save(ElementEntity element);
 }

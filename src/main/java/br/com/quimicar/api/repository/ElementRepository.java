@@ -4,9 +4,12 @@ import br.com.quimicar.api.entity.ElementEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.lang.NonNull;
 
-public interface ElementRepository extends JpaRepository<ElementEntity, String> {
+import java.util.UUID;
+
+public interface ElementRepository extends JpaRepository<ElementEntity, UUID> {
     @NonNull
     ElementEntity findByNumber(Integer number);
     @NonNull
     void deleteByNumber(Integer number);
+
 }
