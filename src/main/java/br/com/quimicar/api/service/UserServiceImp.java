@@ -4,7 +4,6 @@ import br.com.quimicar.api.entity.Role;
 import br.com.quimicar.api.entity.User;
 import br.com.quimicar.api.repository.RoleRepository;
 import br.com.quimicar.api.repository.UserRepository;
-import br.com.quimicar.api.utils.UserDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

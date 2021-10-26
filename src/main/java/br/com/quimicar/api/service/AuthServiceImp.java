@@ -6,8 +6,6 @@ import br.com.quimicar.api.repository.RoleRepository;
 import br.com.quimicar.api.repository.UserRepository;
 import br.com.quimicar.api.utils.JwtUtils;
 import br.com.quimicar.api.utils.UserDto;
-import br.com.quimicar.api.utils.View;
-import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,6 +17,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.io.IOException;
 
 @Service
 @RequiredArgsConstructor
@@ -63,5 +63,19 @@ public class AuthServiceImp implements AuthService {
         credentials.setRole(auth.getAuthorities().iterator().next().getAuthority());
         userRepository.save(user);
         return credentials;
+    }
+
+    @Override
+    @PreAuthorize("permitAll()")
+    public UserDto recover(String token) throws IOException {
+        Authentication auth = JwtUtils.parseToken(token);
+        User user = userRepository.findByEmail(auth.getName());
+        UserDto userDto = new UserDto();
+        userDto.setFullName(user.getFullName());
+        userDto.setEmail(user.getEmail());
+        userDto.setRole(user.getRole().getName());
+        userDto.setEnabled(user.isEnabled());
+        userDto.setToken(user.getToken());
+        return userDto;
     }
 }

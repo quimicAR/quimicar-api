@@ -2,7 +2,6 @@ package br.com.quimicar.api.service;
 
 import br.com.quimicar.api.entity.Role;
 import br.com.quimicar.api.repository.RoleRepository;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

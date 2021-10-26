@@ -13,9 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.io.IOException;
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -48,6 +48,14 @@ public class UserController {
         log.info("Logging user {}", user.getEmail());
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/login").toUriString());
         return ResponseEntity.created(uri).body(authService.login(user));
+    }
+
+    @PostMapping(value = "/recover/{token}")
+    @JsonView(View.UserSimpleView.class)
+    public ResponseEntity<UserDto> recover(@PathVariable String token) throws IOException {
+        log.info("Recovering user with Token {}", token);
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/recover").toUriString());
+        return ResponseEntity.created(uri).body(authService.recover(token));
     }
 
     @PutMapping(value = "/users/{id}")
