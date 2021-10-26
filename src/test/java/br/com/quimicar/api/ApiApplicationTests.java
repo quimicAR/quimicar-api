@@ -1,8 +1,8 @@
 package br.com.quimicar.api;
 
 
-import br.com.quimicar.api.entity.ElementEntity;
-import br.com.quimicar.api.entity.UserEntity;
+import br.com.quimicar.api.entity.Element;
+import br.com.quimicar.api.entity.User;
 import br.com.quimicar.api.repository.ElementRepository;
 import br.com.quimicar.api.repository.UserRepository;
 import org.junit.jupiter.api.Test;
@@ -33,7 +33,7 @@ class ApiApplicationTests {
 	void testCreateElement() {
 		Integer[] shells = new Integer[] {1};
 		Integer[] ionization_energies = new Integer[] {1};
-		ElementEntity element = new ElementEntity();
+		Element element = new Element();
 		element.setNumber(120);
 		element.setAtomic_mass(1.00784);
 		element.setName("Testing Element");
@@ -49,13 +49,13 @@ class ApiApplicationTests {
 
 	@Test
 	void testShouldFindAllElements() {
-		List<ElementEntity> elements = elementRepository.findAll();
+		List<Element> elements = elementRepository.findAll();
 		assertNotNull(elements);
 	}
 
 	@Test
 	void testShouldCreateUser() {
-		UserEntity user = new UserEntity();
+		User user = new User();
 		user.setEmail("user@test.com");
 		user.setPassword("123456");
 		userRepository.save(user);

@@ -1,29 +1,28 @@
 package br.com.quimicar.api.service;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
-import br.com.quimicar.api.entity.ElementEntity;
+import br.com.quimicar.api.entity.Element;
 import br.com.quimicar.api.repository.ElementRepository;
 import org.springframework.web.server.ResponseStatusException;
 
 @Service
+@RequiredArgsConstructor
 public class ElementServiceImp implements ElementService {
 
     private final ElementRepository elementsRepository;
 
-    public ElementServiceImp(ElementRepository elementsRepository) {
-        this.elementsRepository = elementsRepository;
-    }
-
     @Override
     @PreAuthorize("permitAll()")
-    public List<ElementEntity> findAll() {
+    public List<Element> findAll() {
         try {
-            return elementsRepository.findAll();
+            return elementsRepository.findByOrderByNumberAsc();
         }
         catch (Exception error) {
             throw new ResponseStatusException(
@@ -33,7 +32,21 @@ public class ElementServiceImp implements ElementService {
 
     @Override
     @PreAuthorize("permitAll()")
-    public ElementEntity findByNumber(Integer number) {
+    public List<String> findAllCategories() {
+        try {
+            return Arrays.asList("Noble Gases", "Alkali Metals", "Alkaline Earth Metals",
+                    "Post Transition Metals", "Transition Metals", "Lanthanoids", "Actinoids", "Non Metal");
+        }
+        catch (Exception error) {
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "Categories Not Found", error);
+        }
+    }
+
+
+    @Override
+    @PreAuthorize("permitAll()")
+    public Element findByNumber(Integer number) {
         try {
             return elementsRepository.findByNumber(number);
         }
@@ -44,7 +57,7 @@ public class ElementServiceImp implements ElementService {
     }
 
     @Override
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public void deleteByNumber(Integer number) {
         try {
             elementsRepository.deleteByNumber(number);
@@ -56,8 +69,8 @@ public class ElementServiceImp implements ElementService {
     }
 
     @Override
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ElementEntity updateElement(Integer number, ElementEntity element) {
+    @PreAuthorize("hasRole('ADMIN')")
+    public Element updateElement(Integer number, Element element) {
         try {
             System.out.println(element);
             return element;
@@ -69,8 +82,8 @@ public class ElementServiceImp implements ElementService {
     }
 
     @Override
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ElementEntity save(ElementEntity element) {
+    @PreAuthorize("hasRole('ADMIN')")
+    public Element save(Element element) {
         try {
             return elementsRepository.save(element);
         }

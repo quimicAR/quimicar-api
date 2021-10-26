@@ -1,16 +1,18 @@
 package br.com.quimicar.api.service;
 
 import java.util.List;
-import br.com.quimicar.api.entity.ElementEntity;
+import br.com.quimicar.api.entity.Element;
 
 public interface ElementService {
-    List<ElementEntity> findAll();
+    List<Element> findAll();
 
-    ElementEntity findByNumber(Integer number);
+    List<String> findAllCategories();
+
+    Element findByNumber(Integer number);
 
     void deleteByNumber(Integer number);
 
-    ElementEntity updateElement(Integer number, ElementEntity element);
+    Element updateElement(Integer number, Element element);
 
-    ElementEntity save(ElementEntity element);
+    Element save(Element element);
 }

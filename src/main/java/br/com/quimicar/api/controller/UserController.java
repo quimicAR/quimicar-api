@@ -1,57 +1,73 @@
 package br.com.quimicar.api.controller;
 
-import br.com.quimicar.api.entity.UserEntity;
+import br.com.quimicar.api.entity.User;
+import br.com.quimicar.api.service.AuthService;
 import br.com.quimicar.api.service.UserService;
 import br.com.quimicar.api.utils.UserDto;
 import br.com.quimicar.api.utils.View;
 import com.fasterxml.jackson.annotation.JsonView;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api")
+@RequiredArgsConstructor
 @CrossOrigin
+@Slf4j
 public class UserController {
-
     private final UserService userService;
+    private final AuthService authService;
 
-    @Autowired
-    public UserController(UserService userService) { this.userService = userService; }
-
-    @GetMapping(value="/users") // List users for Admin
-    @JsonView(View.UserView.class)
-    public ResponseEntity<List<UserEntity>> listUsers() {
-        return new ResponseEntity<>(userService.findAll(), HttpStatus.OK);
+    @GetMapping(value="/users")
+    @JsonView(View.UserListView.class)
+    public ResponseEntity<List<User>> listUsers(@RequestParam(required = false) String email, @RequestParam(required = false) String role) {
+        log.info("Listing all users ");
+        return ResponseEntity.ok().body(userService.findAll(email, role));
     }
 
-    @PostMapping(value = "/register") // Create new User
-    @JsonView(View.UserView.class)
-    public ResponseEntity<UserEntity> register(@RequestBody UserDto user){
-
-        UserEntity saved = userService.save(user);
-
-        System.out.println(saved.getEmail());
-        System.out.println(saved.getPassword());
-        System.out.println(saved.getRole());
-
-        return new ResponseEntity<>(saved, HttpStatus.CREATED);
+    @PostMapping(value = "/register")
+    @JsonView(View.UserSimpleView.class)
+    public ResponseEntity<User> register(@RequestBody UserDto user){
+        log.info("Registering user {}", user.getEmail());
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/register").toUriString());
+        return ResponseEntity.created(uri).body(authService.register(user));
     }
 
-    @PostMapping(value = "/login") // Login the User/Admin account
-    @JsonView(View.UserView.class)
-    public ResponseEntity<UserEntity> login(@RequestBody UserEntity user){
-        System.out.println("Loging in");
+    @PostMapping(value = "/login")
+    @JsonView(View.UserSimpleView.class)
+    public ResponseEntity<UserDto> login(@RequestBody UserDto user) throws JsonProcessingException {
+        log.info("Logging user {}", user.getEmail());
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/login").toUriString());
+        return ResponseEntity.created(uri).body(authService.login(user));
+    }
 
-        System.out.println(user.getEmail());
-        System.out.println(user.getPassword());
+    @PutMapping(value = "/users/{id}")
+    public ResponseEntity<User> update(@PathVariable UUID id, @RequestBody User user) {
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/users/id").toUriString());
+        log.info("Editing user {}", user.getEmail());
+        return ResponseEntity.created(uri).body(userService.update(id, user));
+    }
 
-        UserEntity exists = userService.findByEmail(user.getEmail());
+    @GetMapping(value = "/users/{id}")
+    public ResponseEntity<User> update(@PathVariable UUID id) {
+        log.info("Getting user {}", id);
+        return ResponseEntity.ok().body(userService.findById(id));
+    }
 
-        return new ResponseEntity<>(exists, HttpStatus.OK);
 
+    @DeleteMapping (value = "/users/{id}")
+    public ResponseEntity<?> delete(@PathVariable UUID id) {
+        userService.delete(id);
+        log.info("Deleting user {}", id);
+        return ResponseEntity.ok().build();
     }
 }

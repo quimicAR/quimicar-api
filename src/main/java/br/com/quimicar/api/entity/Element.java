@@ -22,7 +22,7 @@ import java.util.UUID;
 @Table(name = "elements")
 @Getter
 @Setter
-public class ElementEntity {
+public class Element {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
@@ -37,7 +37,7 @@ public class ElementEntity {
     private String name;
 
     @Column(nullable = false)
-    @JsonView(View.ElementDetailsView.class)
+    @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private Double atomic_mass;
 
     @JsonView(View.ElementDetailsView.class)
@@ -94,6 +94,7 @@ public class ElementEntity {
 
     @Type(type = "int[]")
     @Column(nullable = false)
+    @JsonView(View.ElementListView.class)
     private Integer[] shells;
 
     @JsonView(View.ElementDetailsView.class)
