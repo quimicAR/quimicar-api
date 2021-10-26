@@ -31,7 +31,6 @@ public class ElementServiceImp implements ElementService {
     }
 
     @Override
-    @PreAuthorize("permitAll()")
     public List<String> findAllCategories() {
         try {
             return Arrays.asList("Noble Gases", "Alkali Metals", "Alkaline Earth Metals",
