@@ -73,6 +73,35 @@ public class ElementServiceImp implements ElementService {
     public Element updateElement(Integer number, Element element) {
         try {
             System.out.println(element);
+            Element update = elementsRepository.findByNumber(number);
+
+            update.setNumber(element.getNumber());
+            update.setName(element.getName());
+            update.setAtomic_mass(element.getAtomic_mass());
+            update.setAppearance(element.getAppearance());
+            update.setBoil(element.getBoil());
+            update.setCategory(element.getCategory());
+            update.setDensity(element.getDensity());
+            update.setMelt(element.getMelt());
+            update.setMolar_heat(element.getMolar_heat());
+            update.setDiscovered_by(element.getDiscovered_by());
+            update.setNamed_by(element.getNamed_by());
+            update.setPeriod(element.getPeriod());
+            update.setPhase(element.getPhase());
+            update.setSymbol(element.getSymbol());
+            update.setSource(element.getSource());
+            update.setSpectral_img(element.getSpectral_img());
+            update.setSummary(element.getSummary());
+            update.setXpos(element.getXpos());
+            update.setYpos(element.getYpos());
+            update.setElectron_configuration(element.getElectron_configuration());
+            update.setElectron_configuration_semantic(element.getElectron_configuration_semantic());
+            update.setElectron_affinity(element.getElectron_affinity());
+            update.setElectronegativity_pauling(element.getElectronegativity_pauling());
+            update.setElement_img(element.getElement_img());
+            update.setEnabled(element.getEnabled());
+
+            elementsRepository.save(update);
             return element;
         }
         catch (Exception error) {
