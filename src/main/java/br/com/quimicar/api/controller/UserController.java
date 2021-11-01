@@ -66,7 +66,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/users/{id}")
-    public ResponseEntity<User> update(@PathVariable UUID id) {
+    public ResponseEntity<User> getById(@PathVariable UUID id) {
         log.info("Getting user {}", id);
         return ResponseEntity.ok().body(userService.findById(id));
     }
