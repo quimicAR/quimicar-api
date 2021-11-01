@@ -28,11 +28,11 @@ public class Element {
     @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private UUID id;
 
-    @Column(nullable = false, unique = true, updatable = false)
+    @Column(nullable = false, unique = true)
     @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private Integer number;
 
-    @Column(nullable = false, unique = true, updatable = false)
+    @Column(nullable = false, unique = true)
     @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private String name;
 
@@ -46,7 +46,6 @@ public class Element {
     @JsonView(View.ElementDetailsView.class)
     private Double boil;
 
-    @Column(nullable = false)
     @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private String category;
 
@@ -84,16 +83,13 @@ public class Element {
     @JsonView(View.ElementDetailsView.class)
     private String summary;
 
-    @Column(updatable = false)
-    @JsonView(View.ElementListView.class)
+    @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private Integer xpos;
 
-    @Column(updatable = false)
-    @JsonView(View.ElementListView.class)
+    @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private Integer ypos;
 
     @Type(type = "int[]")
-    @Column(nullable = false)
     @JsonView(View.ElementListView.class)
     private Integer[] shells;
 
@@ -109,13 +105,11 @@ public class Element {
     private Integer electronegativity_pauling;
 
     @Type(type = "int[]")
-    @Column(nullable = false)
     private Integer[] ionization_energies;
 
     @JsonView(View.ElementDetailsView.class)
     private String element_img;
 
-    @Column(nullable = false)
     @JsonView({View.ElementListView.class, View.ElementDetailsView.class})
     private Boolean enabled;
 }

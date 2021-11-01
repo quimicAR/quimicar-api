@@ -1,6 +1,7 @@
 package br.com.quimicar.api.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
@@ -12,8 +13,11 @@ import br.com.quimicar.api.entity.Element;
 import br.com.quimicar.api.repository.ElementRepository;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.transaction.Transactional;
+
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class ElementServiceImp implements ElementService {
 
     private final ElementRepository elementsRepository;
@@ -35,7 +39,7 @@ public class ElementServiceImp implements ElementService {
     public List<String> findAllCategories() {
         try {
             return Arrays.asList("Noble Gases", "Alkali Metals", "Alkaline Earth Metals",
-                    "Post Transition Metals", "Transition Metals", "Lanthanoids", "Actinoids", "Non Metal");
+                    "Post Transition Metals", "Transition Metals", "Lanthanoids", "Actinoids", "Non Metal", "Metalloids");
         }
         catch (Exception error) {
             throw new ResponseStatusException(
@@ -57,12 +61,14 @@ public class ElementServiceImp implements ElementService {
     }
 
     @Override
+    @Transactional
     @PreAuthorize("hasRole('ADMIN')")
     public void deleteByNumber(Integer number) {
         try {
             elementsRepository.deleteByNumber(number);
         }
         catch (Exception error) {
+            log.warn("Error to delete element: {}", error.getMessage());
             throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST, "Could not delete element", error);
         }
@@ -72,8 +78,9 @@ public class ElementServiceImp implements ElementService {
     @PreAuthorize("hasRole('ADMIN')")
     public Element updateElement(Integer number, Element element) {
         try {
-            System.out.println(element);
             Element update = elementsRepository.findByNumber(number);
+
+            System.out.println(element);
 
             update.setNumber(element.getNumber());
             update.setName(element.getName());
@@ -99,7 +106,7 @@ public class ElementServiceImp implements ElementService {
             update.setElectron_affinity(element.getElectron_affinity());
             update.setElectronegativity_pauling(element.getElectronegativity_pauling());
             update.setElement_img(element.getElement_img());
-            update.setEnabled(element.getEnabled());
+            update.setEnabled(element.getEnabled() );
 
             elementsRepository.save(update);
             return element;
@@ -121,5 +128,4 @@ public class ElementServiceImp implements ElementService {
                     HttpStatus.BAD_REQUEST, "Could not create element", error);
         }
     }
-
 }
