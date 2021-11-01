@@ -50,19 +50,25 @@ public class AuthServiceImp implements AuthService {
     @Override
     @PreAuthorize("permitAll()")
     public UserDto login(UserDto credentials) throws JsonProcessingException, ResponseStatusException {
-        User user = userRepository.findByEmail(credentials.getEmail());
+        try {
+            User user = userRepository.findByEmail(credentials.getEmail());
 
-        if(!user.isEnabled()) throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "This account is inactive! Talk with the system Administrator");
+            if(!user.isEnabled()) throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "This account is inactive! Talk with the system Administrator");
 
-        Authentication auth = new UsernamePasswordAuthenticationToken(credentials.getEmail(),credentials.getPassword());
-        auth = authManager.authenticate(auth);
+            Authentication auth = new UsernamePasswordAuthenticationToken(credentials.getEmail(),credentials.getPassword());
+            auth = authManager.authenticate(auth);
 
-        credentials.setPassword(null);
-        credentials.setToken(JwtUtils.generateToken(auth));
-        user.setToken(JwtUtils.generateToken(auth));
-        credentials.setRole(auth.getAuthorities().iterator().next().getAuthority());
-        userRepository.save(user);
-        return credentials;
+            credentials.setPassword(null);
+            credentials.setToken(JwtUtils.generateToken(auth));
+            user.setToken(JwtUtils.generateToken(auth));
+            credentials.setRole(auth.getAuthorities().iterator().next().getAuthority());
+            userRepository.save(user);
+            return credentials;
+        } catch (Exception error) {
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "Verify your e-mail and password!", error);
+        }
+
     }
 
     @Override
