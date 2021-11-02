@@ -18,15 +18,14 @@ public class User {
     @JsonView(View.UserListView.class)
     private UUID id;
 
-//    @Column(name = "full_name", nullable = false, updatable = false, unique = true)
     @JsonView({View.UserSimpleView.class, View.UserListView.class})
     private String fullName;
 
-    @Column(name = "email", nullable = false, updatable = false, unique = true)
+    @Column(name = "email", nullable = false, unique = true)
     @JsonView({View.UserSimpleView.class, View.UserListView.class})
     private String email;
 
-    @Column(name = "password", nullable = false, updatable = false, unique = true)
+    @Column(name = "password", nullable = false, unique = true)
     private String password;
 
     @JsonView(View.UserListView.class)

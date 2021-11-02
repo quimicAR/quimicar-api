@@ -21,11 +21,4 @@ public class Role {
     @Column(name = "name", nullable = false, updatable = true, unique = true)
     @JsonView({View.UserSimpleView.class, View.UserListView.class})
     private String name;
-
-//    @ManyToMany(fetch = FetchType.EAGER)
-//    @JoinTable(name = "role_has_permissions",
-//            joinColumns = {@JoinColumn(name = "role_id")},
-//            inverseJoinColumns = {@JoinColumn(name = "permission_id")})
-//    @JsonView(View.UserView.class)
-//    private Set<Permission> permissions;
 }
