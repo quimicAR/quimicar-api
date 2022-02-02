@@ -17,7 +17,7 @@ import org.springframework.web.filter.GenericFilterBean;
 public class JwtAuthenticationFilter extends GenericFilterBean {
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException {
         try {
             HttpServletRequest servletRequest = (HttpServletRequest) request;
             String authorization = servletRequest.getHeader(HttpHeaders.AUTHORIZATION);

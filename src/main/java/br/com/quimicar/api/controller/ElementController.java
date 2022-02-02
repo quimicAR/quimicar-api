@@ -34,7 +34,6 @@ public class ElementController {
         return ResponseEntity.ok().body(elementService.findAllCategories());
     }
 
-
     @GetMapping(value = "/elements/{atomicNumber}")
     @JsonView(View.ElementDetailsView.class)
     public ResponseEntity<Element> getByAtomicNumber(@PathVariable Integer atomicNumber) {

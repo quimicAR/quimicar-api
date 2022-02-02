@@ -18,7 +18,7 @@ public class Role {
     @JsonView({View.UserSimpleView.class, View.UserListView.class})
     private UUID role_id;
 
-    @Column(name = "name", nullable = false, updatable = true, unique = true)
+    @Column(name = "name", nullable = false, unique = true)
     @JsonView({View.UserSimpleView.class, View.UserListView.class})
     private String name;
 }

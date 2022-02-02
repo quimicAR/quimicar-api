@@ -32,6 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception { auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder); }
 
+    @SuppressWarnings("EmptyMethod")
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception { return super.authenticationManagerBean(); }

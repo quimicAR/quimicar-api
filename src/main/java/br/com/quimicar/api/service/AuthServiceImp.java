@@ -49,7 +49,7 @@ public class AuthServiceImp implements AuthService {
 
     @Override
     @PreAuthorize("permitAll()")
-    public UserDto login(UserDto credentials) throws JsonProcessingException, ResponseStatusException {
+    public UserDto login(UserDto credentials) throws ResponseStatusException {
         try {
             User user = userRepository.findByEmail(credentials.getEmail());
 

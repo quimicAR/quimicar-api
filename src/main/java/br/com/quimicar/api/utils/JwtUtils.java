@@ -38,7 +38,7 @@ public class JwtUtils {
 
         String userJson = mapper.writeValueAsString(userNotAuthenticated);
         Date agora = new Date();
-        Long hora = 1000L * 60L * 60L; // Uma hora
+        long hora = 1000L * 60L * 60L; // Uma hora
 
         log.info("Role defined for {} - {}", userNotAuthenticated.getEmail(), userNotAuthenticated.getRole().getName());
 
@@ -46,7 +46,7 @@ public class JwtUtils {
                 .setExpiration(new Date(agora.getTime() + hora)).signWith(SignatureAlgorithm.HS512, KEY).compact();
     }
 
-    public static Authentication parseToken(String token) throws JsonParseException, JsonMappingException, IOException {
+    public static Authentication parseToken(String token) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
 
         // Token validation

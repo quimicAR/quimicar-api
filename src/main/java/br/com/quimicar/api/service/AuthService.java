@@ -8,6 +8,6 @@ import java.io.IOException;
 
 public interface AuthService {
     User register(UserDto user);
-    UserDto login(UserDto user) throws JsonProcessingException;
+    UserDto login(UserDto user);
     UserDto recover(String token) throws IOException;
 }

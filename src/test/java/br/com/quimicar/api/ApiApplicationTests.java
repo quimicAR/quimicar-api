@@ -1,9 +1,10 @@
 package br.com.quimicar.api;
 
-
 import br.com.quimicar.api.entity.Element;
+import br.com.quimicar.api.entity.Role;
 import br.com.quimicar.api.entity.User;
 import br.com.quimicar.api.repository.ElementRepository;
+import br.com.quimicar.api.repository.RoleRepository;
 import br.com.quimicar.api.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,20 +17,22 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@Transactional
 @Rollback
 class ApiApplicationTests {
 	@Autowired
 	private ElementRepository elementRepository;
+
 	@Autowired
 	private UserRepository userRepository;
 
+	@Autowired
+	private RoleRepository roleRepository;
 
 	@Test
-	void contextLoads() {
-	}
+	void contextLoads() {}
 
-	@Test
+    @Test
+	@Transactional
 	void testCreateElement() {
 		Integer[] shells = new Integer[] {1};
 		Integer[] ionization_energies = new Integer[] {1};
@@ -54,11 +57,31 @@ class ApiApplicationTests {
 	}
 
 	@Test
+	@Transactional
 	void testShouldCreateUser() {
 		User user = new User();
 		user.setEmail("user@test.com");
 		user.setPassword("123456");
 		userRepository.save(user);
 		assertNotNull(user.getId());
+	}
+
+	@Test
+	@Transactional
+	void testShouldCreateRoleAndUser() {
+		// Create ROLE_MANAGER
+		Role role = new Role();
+		role.setName("ROLE_MANAGER");
+		roleRepository.save(role);
+
+		// Create User Manager
+		User manager = new User();
+		manager.setFullName("Test Manager");
+		manager.setEmail("manager@email.com");
+		manager.setPassword("123456");
+		manager.setRole(roleRepository.getByName("ROLE_MANAGER"));
+		userRepository.save(manager);
+
+		assertEquals("ROLE_MANAGER", manager.getRole().getName());
 	}
 }
